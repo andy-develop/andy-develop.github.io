@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: andy-develop/personalPage
+  branch: main
+
+media_folder: /docs/public/media
+public_folder: /media
+
+collections:
+  - name: tech
+    label: 技术笔记
+    label_singular: 技术文章
+    folder: /docs/技术笔记
+    create: true
+    format: frontmatter
+    slug: "{{title}}"
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 日期, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false }
+      - { label: 正文, name: body, widget: markdown }
+  - name: essays
+    label: 随笔
+    label_singular: 随笔
+    folder: /docs/随笔
+    create: true
+    format: frontmatter
+    slug: "{{title}}"
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 日期, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false }
+      - { label: 正文, name: body, widget: markdown }
+  - name: tutorials
+    label: 教程
+    label_singular: 教程文章
+    folder: /docs/教程
+    create: true
+    format: frontmatter
+    slug: "{{title}}"
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 日期, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false }
+      - { label: 正文, name: body, widget: markdown }
