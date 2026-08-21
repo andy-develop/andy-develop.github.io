@@ -2,6 +2,8 @@ backend:
   name: github
   repo: andy-develop/andy-develop.github.io
   branch: main
+  # 固定为 token 登录：避免显示默认的 Netlify OAuth 登录按钮（未配置，点了会报 Not Found）
+  auth_methods: [token]
 
 media_folder: /docs/public/media
 public_folder: /media
