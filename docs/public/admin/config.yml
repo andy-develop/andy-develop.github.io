@@ -2,8 +2,9 @@ backend:
   name: github
   repo: andy-develop/andy-develop.github.io
   branch: main
-  # 固定为 token 登录：避免显示默认的 Netlify OAuth 登录按钮（未配置，点了会报 Not Found）
-  auth_methods: [token]
+  # GitHub OAuth 登录：通过自托管 Cloudflare Worker（sveltia-cms-auth）中转
+  base_url: https://sveltia-cms-auth.gaussnju-384.workers.dev
+  auth_methods: [oauth]
 
 media_folder: /docs/public/media
 public_folder: /media
