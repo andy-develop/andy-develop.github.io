@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: andy-develop/personalPage
+  repo: andy-develop/andy-develop.github.io
   branch: main
 
 media_folder: /docs/public/media
