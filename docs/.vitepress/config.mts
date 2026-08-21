@@ -52,8 +52,8 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '个人主页',
   description: '一个以 Markdown 为内容的个人主页，GitHub Actions 自动构建部署',
+  // 用户主页（andy-develop.github.io）：站点挂在根路径，base 用默认的 /
   // 不启用 cleanUrls：GitHub Pages 不做无扩展名解析，链接带 .html 才能正常访问
-  base: '/personalPage/',
   themeConfig: {
     nav: [{ text: 'GitHub', link: 'https://github.com/andy-develop' }],
     sidebar: {
